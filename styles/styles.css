@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* //////// ----------- RESET, ROOT and REUSABLES ----------- //////// */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+fonts:
+headers merriweather
+normale tekst roboto
+*/
+
+:root {
+    --paars: #5722CD;
+    --blauw: #4845E4;
+    --roze: #ED4385;
+    --zwart: #0C0C0C;
+    --lichtpaars: #F2F0FF;
+    --lichtgrijs: #F3F6F9;
+    --grijs: #7A7A7A;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.dev {
+    border: 2px solid red;
+}
+
+.outer-container {
+    border: 4px dashed yellow;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.inner-container {
+    border: 2px dashed red;
+
+    flex-basis: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    /*    margin: 10px 40px;*/
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* //////// ----------- END OF RESET, ROOT and REUSABLES ----------- //////// */
+
+
+/* //////// ----------- HEADER ----------- //////// */
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+}
+
+.hero-section__navbar {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: var(--lichtgrijs);
+    text-decoration: none;
+}
+
+ul {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+
+    flex-basis: 400px;
+    padding: 20px;
+    list-style: none;
+}
+
+header {
+    background-color: var(--blauw);
+    background: linear-gradient(45deg, #4845E4, #5722CD);
+/*background: linelinear-gradient(.25turn, --blauw, 10%, --paars);*/
+    color: var(--lichtpaars);
+}
+
+.header-content {
+    border: 2px solid blue;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.header-text {
+    border: 2px solid blue;
+    padding: 20px;
+    /*margin: auto;*/
+}
+.header-button {
+    border-radius: 60px;
+    padding: 20px 40px;
+    /*margin: 0 20px;*/
+    background-color: var(--roze);
+    color: var(--lichtpaars);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-transform: uppercase;
+}
+
+.header-image {
+width: 40px;
+
+}
+
+
+/* //////// ----------- END OF HEADER ----------- //////// */
+
+/* //////// ----------- MAIN ----------- //////// */
+/* //////// ----------- SECTION 1 - HELLO ----------- //////// */
+
+.section-hello__textbox {
+    color: var(--paars);
+    text-align: center;
+    /*width: 550px;*/
+    padding: 20px 220px;
+}
+
+.section-hello__textbox h3 {
+    margin: 20px;
+    font-weight: normal;
+}
+
+.section-hello__textbox p {
+    color: var(--zwart);
+}
+.section__link {
+    text-decoration: none;
+    color: var(--paars);
+}
+
+
+/* //////// ----------- SECTION 2 - WORK ----------- //////// */
+
+
+
+
+/* //////// ----------- SECTION 3 - SERVICES ----------- //////// */
+
+
+/* //////// ----------- SECTION 4 - FORM ----------- //////// */
+
+
+
+/* //////// ----------- MEDIA QUERIES ----------- //////// */
+@media screen and (max-width: 320px) {
+    
+}
+
+
+/* //////// ----------- HEADER ----------- //////// */
+
+/* //////// ----------- END OF HEADER ----------- //////// */
+
+/* //////// ----------- MAIN ----------- //////// */
+
+/* //////// ----------- SECTION 1 -  ----------- //////// */
+
+/* //////// ----------- SECTION 2 -  ----------- //////// */
+
+/* //////// ----------- SECTION 3 -  ----------- //////// */
+
+/* //////// ----------- END OF MAIN ----------- //////// */
+
+/* //////// ----------- FOOTER ----------- //////// */
+
+/* //////// ----------- END OF FOOTER ----------- //////// */
+
+/* //////// ----------- MEDIA QUERIES ----------- //////// */
+
