@@ -52,47 +52,49 @@
     <!-- //////// ----------- SECTION 2 - WORK ----------- //////// -->
     <section class="outer-container">
         <div class="inner-container">
-            <article>
+            <article class="inner-container__article">
                 <div class="inner-container__textbox">
                     <h4>Rolling Stone</h4>
-                    <img src="" alt="">
+                    <img class="article__textbox-image" src="./assets/squiggle_line.svg" alt="">
                     <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global
                         icon.</p>
                 </div>
-                <span class="inner-container__images">
-            <img class="inner-container__images" src="assets/work-image-01.jpeg" alt="">
+                <span class="image-wrapper">
+            <img class="inner-container__image" src="assets/work-image-01.jpeg" alt="">
             </span>
             </article>
         </div>
 
         <div class="inner-container">
-            <article>
+            <article class="inner-container__article">
                 <div class="inner-container__textbox">
                     <h4>Variety</h4>
-                    <img src="" alt="">
+                    <img class="article__textbox-image" src="./assets/squiggle_line.svg" alt="">
                     <p>Variety is an industry leader for breaking entertainment news, reviews and box office results
                         with archive of content dating back to 1905.</p>
                 </div>
-                <span class="inner-container__images">
-            <img class="inner-container__images" src="assets/work-image-02.jpeg" alt="">
+                <span class="image-wrapper">
+            <img class="inner-container__image" src="assets/work-image-02.jpeg" alt="">
             </span>
             </article>
         </div>
 
         <div class="inner-container">
-            <article>
+            <article class="inner-container__article">
                 <div class="inner-container__textbox">
                     <h4>Worth</h4>
-                    <img src="" alt="">
+                    <img class="article__textbox-image" src="./assets/squiggle_line.svg" alt="">
                     <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
                 </div>
-                <span class="inner-container__images">
-            <img class="image-wrapper" src="assets/work-image-03.jpeg" alt="">
+                <span class="image-wrapper">
+              <img class="inner-container__image" src="assets/work-image-03.jpeg" alt="">
             </span>
             </article>
         </div>
 
     </section>
+
+
     <!-- //////// ----------- SECTION 3 - SERVICES ----------- //////// -->
     <section class="outer-container">
         <div class="inner-container">
@@ -142,13 +144,22 @@
         </div>
     </section>
     <!-- //////// ----------- SECTION 4 - FORM ----------- //////// -->
+   <div class="form-background">
     <section class="outer-container">
         <div class="inner-container">
             <form>
-                <h3 id="contact-us">Let's work together</h3>
+                <h1 id="contact-us">Let's work together</h1>
+                <p>Have a question? Need a quote? Let us know!</p>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message</label><br>
+                <input type="text" id="message" name="message"><br>
             </form>
         </div>
     </section>
+   </div>
 </main>
 <!-- //////// ----------- END OF MAIN ----------- //////// -->
 
