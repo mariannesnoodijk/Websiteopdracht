@@ -8,12 +8,6 @@
     padding: 0;
 }
 
-/*
-fonts:
-headers merriweather
-normale tekst roboto
-*/
-
 :root {
     --paars: #5722CD;
     --blauw: #4845E4;
@@ -24,7 +18,7 @@ normale tekst roboto
     --grijs: #7A7A7A;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -32,7 +26,13 @@ body{
     border: 2px solid red;
 }
 
-.outer-container {
+
+/* //////// ----------- END OF RESET, ROOT and REUSABLES ----------- //////// */
+
+
+/* //////// ----------- HEADER ----------- //////// */
+
+.outer-container__header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,36 +41,20 @@ body{
     width: 100%;
 }
 
-.inner-container {
-    border: 2px dashed red;
-
+.inner-container__header {
     flex-basis: 1000px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 20px;
-    /*    margin: 10px 40px;*/
 }
-
-/*.container {*/
-/*    max-width: 1000px;*/
-/*    margin: 0 auto;*/
-/*    padding: 0 20px;*/
-/*}*/
-
-
-/* //////// ----------- END OF RESET, ROOT and REUSABLES ----------- //////// */
-
-
-/* //////// ----------- HEADER ----------- //////// */
 
 h1, h2, h3, h4 {
     font-family: 'Merriweather', serif;
 }
 
 .hero-section__navbar {
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -78,8 +62,18 @@ h1, h2, h3, h4 {
     text-decoration: none;
 }
 
+li a {
+    color: var(--lichtgrijs);
+    text-decoration: none;
+}
+li a:visited {
+    color: var(--lichtgrijs);
+}
+a:hover {
+    cursor: auto;
+}
+
 ul {
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
 
@@ -91,23 +85,22 @@ ul {
 header {
     background-color: var(--blauw);
     background: linear-gradient(45deg, #4845E4, #5722CD);
-/*background: linelinear-gradient(.25turn, --blauw, 10%, --paars);*/
+    /*background: linelinear-gradient(.25turn, --blauw, 10%, --paars);*/
     color: var(--lichtpaars);
 }
 
 .header-content {
-    border: 2px solid blue;
     text-align: center;
     padding: 20px;
     margin: 20px;
 }
 
 .header-text {
-    border: 2px solid blue;
     padding: 20px;
     /*margin: auto;*/
 }
-.header-button {
+
+.btn_header {
     border-radius: 60px;
     padding: 20px 40px;
     /*margin: 0 20px;*/
@@ -119,7 +112,7 @@ header {
 }
 
 .header-image {
-width: 40px;
+    width: 40px;
 
 }
 
@@ -128,6 +121,24 @@ width: 40px;
 
 /* //////// ----------- MAIN ----------- //////// */
 /* //////// ----------- SECTION 1 - HELLO ----------- //////// */
+
+.outer-container__main-section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.inner-container__main-section1 {
+    flex-basis: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
 
 .section-hello__textbox {
     color: var(--paars);
@@ -142,9 +153,10 @@ width: 40px;
 }
 
 .inner-container p {
-    color: var(--zwart);
+    color: var(--lichtgrijs);
     padding-bottom: 40px;
 }
+
 .section__link {
     text-decoration: none;
     color: var(--paars);
@@ -153,53 +165,160 @@ width: 40px;
 
 /* //////// ----------- SECTION 2 - WORK ----------- //////// */
 
-.inner-container__article {
-display: flex;
-flex-direction: row;
+.outer-container__main-section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-block: 125px;
 }
 
-.inner-container__article:nth-child(even) {
+.main-article-container {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 100px;
+    /*padding: 100px;*/
+}
+
+.main-article-container:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.inner-container__textbox {
+.article__textbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px;
-    margin: 50px;
+    margin: 0 50px 100px;
 }
 
+.article__textbox p {
+    margin-top: 30px;
+}
 
 .article__textbox-image {
-    width: 20%;
+    width: 10%;
+    margin-top: 20px;
 }
+
+p a {
+    text-transform: uppercase;
+    color: var(--paars);
+    font-size: small;
+}
+
 
 .inner-container__image {
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0 25px 20px -20px;
 }
 
 .image-wrapper {
-    flex-basis: 800px;
+    flex-basis: 1200px;
     flex-grow: 0;
     flex-shrink: 1;
+    /*padding: 50px;*/
+    /*margin: 50px;*/
 }
 
 
 /* //////// ----------- SECTION 3 - SERVICES ----------- //////// */
 
+.outer-container__main-section3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-article-grid-box {
+    border: 1px solid var(--paars);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.grid-icon {
+    width: 50%;
+}
+
+.main-article-grid-box h3 {
+    color: var(--paars);
+    padding: 10px 0 20px;
+}
+
+.main-article-grid-box p {
+    color: var(--grijs);
+}
+
+.grid__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1500px;
+}
 
 /* //////// ----------- SECTION 4 - FORM ----------- //////// */
 
-.form-background {
+.outer-container__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     background-color: var(--blauw);
     background: linear-gradient(45deg, #4845E4, #5722CD);
+    color: var(--lichtgrijs);
+    margin-top: 100px;
+}
+.form-container {
+    padding: 50px;
 }
 
-.form-background p {
-    color: var(--lichtgrijs);
+.form {
+    flex-basis: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+.form-container p {
+    margin-block: 30px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 30px;
+}
+textarea {
+    width: 400px;
+    height: 150px;
+}
+
+::placeholder {
+    padding: 10px;
+}
+
+.btn_form {
+    align-self: center;
+    border-radius: 60px;
+    padding: 20px 40px;
+    background-color: var(--roze);
+    color: var(--lichtpaars);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-transform: uppercase;
 }
 
 /* //////// ----------- FOOTER ----------- //////// */
@@ -207,11 +326,13 @@ flex-direction: row;
 footer {
     background-color: var(--zwart);
     color: var(--lichtgrijs);
+    padding: 20px;
 }
 
 /* //////// ----------- MEDIA QUERIES ----------- //////// */
+
 @media screen and (max-width: 320px) {
-    
+
 }
 
 
